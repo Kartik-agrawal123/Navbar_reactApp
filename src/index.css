@@ -96,3 +96,7 @@ button{
   padding: 10px;
   border: none;
 }
+#myButton:hover{
+  color: white;
+  background-color: blueviolet;
+}
