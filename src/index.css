@@ -1,23 +1,98 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 .outer-box{
   width: 100%;
   height: 100vh;
-  background-color: dodgerblue;
+  background-color: darkblue;
 }
 .inner-box{
+  bottom: 2px solid black;
+  /* background-color: white; */
+  width: 400px;
+  height: 400px;
   position: relative;
-  top: 40%;
+  top: 10%;
+  left: 35%;
+}
+figure img{
+  width: 100px;
+  margin-left: 140px;
+}
+figcaption{
+  margin-left: 120px;
+  color: white;
+}
+.addItems{
+  margin: 20px;
   text-align: center;
 }
-.inner-box h1{
-  font-size: 5rem;
-}
-.btn Button{
-  margin: 20px;
+.addItems input{
+  width: 70%;
+  height: 30px;
+  outline: none;
+  border: 1px solid black;
   padding: 10px;
+  font-size: 1rem;
+}
+.eachItem{
+  margin-left: 58px;
+  margin: 5px auto;
+  width: 68%;
+  height: 28px;
+  outline: none;
+  /* border: 1px solid black; */
+  background-color: rgb(74, 30, 116);
+  color: white;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+.showItems :hover{
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.btn1{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+.add-btn{
+  margin: 10px;
+  background-color: white;
+  padding: 5px;
+}
+.add-btn:hover{
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+}
+.edit-btn{
+  position: fixed;
+  margin-top: 5px;
+  left: 55%;
+}
+.edit-btn:hover{
+  color: green;
+  cursor: pointer;
+}
+.del-btn{
+  position: fixed;
+  margin-top:5px;
+  /* top: 50%; */
+  left: 57%;
+}
+.del-btn:hover{
+  color: red;
+  cursor: pointer;
+}
+button{
+  margin-top: 50px;
+  margin-left: 150px;
+  padding: 10px;
+  border: none;
 }
