@@ -4,99 +4,83 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
-.outer-box{
-  width: 100%;
-  height: 100vh;
-  background-color: darkblue;
+.top-nav{
+  /* background-color: blue; */
 }
-.inner-box{
-  bottom: 2px solid black;
-  /* background-color: white; */
-  width: 400px;
-  height: 400px;
-  position: relative;
-  top: 10%;
-  left: 35%;
-}
-figure img{
-  width: 100px;
-  margin-left: 140px;
-}
-figcaption{
-  margin-left: 120px;
-  color: white;
-}
-.addItems{
-  margin: 20px;
+.top-nav h1{
+  word-spacing: 5px;
   text-align: center;
+  margin-bottom: 30px;
 }
-.addItems input{
+.btn{
+  margin-top: 10px;
+  margin-left: 200px;
+  /* background-color: red; */
   width: 70%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn button{
+  width: 80px;
   height: 30px;
-  outline: none;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 1rem;
-}
-.eachItem{
-  margin-left: 58px;
-  margin: 5px auto;
-  width: 68%;
-  height: 28px;
-  outline: none;
-  /* border: 1px solid black; */
-  background-color: rgb(74, 30, 116);
-  color: white;
-  padding-left: 10px;
-  font-size: 1rem;
-}
-.showItems :hover{
-  background-color: white;
-  cursor: pointer;
   color: black;
+  background-color: darkorange;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.btn1{
+button:hover{
   background-color: black;
   color: white;
-  padding: 5px;
-  margin: 10px;
 }
-.add-btn{
-  margin: 10px;
-  background-color: white;
-  padding: 5px;
+.dishes{
+  margin: 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* border: 2px solid black; */
+  row-gap: 40px;
+  column-gap: 40px;
 }
-.add-btn:hover{
+.dishes div{
+  /* margin: 10px; */
+  width: 400px;
+  height: 180px;
+  /* background-color: red; */
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px black;
+}
+.maggi{
+  display: flex;
+}
+.maggi img{
+  width: 150px;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.maggi img:hover{
+  transform: scale(1.15);
+}
+.content h3{
+  margin: 5px 10px;
+}
+.content h4{
+  margin: 10px 10px;
+  color: cornflowerblue;
+}
+.content button{
+  margin-left: 50px;
+  background-color: rgb(10, 134, 134);
   color: white;
-  background-color: orange;
-  cursor: pointer;
-}
-.edit-btn{
-  position: fixed;
-  margin-top: 5px;
-  left: 55%;
-}
-.edit-btn:hover{
-  color: green;
-  cursor: pointer;
-}
-.del-btn{
-  position: fixed;
-  margin-top:5px;
-  /* top: 50%; */
-  left: 57%;
-}
-.del-btn:hover{
-  color: red;
-  cursor: pointer;
-}
-button{
-  margin-top: 50px;
-  margin-left: 150px;
-  padding: 10px;
   border: none;
+  outline: none;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
 }
-.myButton:hover{
-  color: white;
-  background-color: blueviolet;
+.content p{
+  margin: 10px 10px;
+  font-size: 0.8rem;
 }
