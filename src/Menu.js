@@ -70,6 +70,14 @@ const Menu = [
         category:"evening",
         price: "20Rs.",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, recusandae.",
+    },
+    {
+        id:10,
+        image: "images/9.jpg",
+        name:"SAMOSA",
+        category:"timePass",
+        price: "20Rs.",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, recusandae.",
     }
 ]
 export default Menu;
