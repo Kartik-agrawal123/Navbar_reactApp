@@ -4,83 +4,70 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
-.top-nav{
-  /* background-color: blue; */
-}
-.top-nav h1{
-  word-spacing: 5px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.btn{
-  margin-top: 10px;
-  margin-left: 200px;
+.main-nav{
+  width: 100%;
+  height: 6rem;
   /* background-color: red; */
-  width: 70%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.btn button{
-  width: 80px;
-  height: 30px;
-  color: black;
-  background-color: darkorange;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-button:hover{
-  background-color: black;
-  color: white;
-}
-.dishes{
-  margin: 50px 30px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  /* border: 2px solid black; */
-  row-gap: 40px;
-  column-gap: 40px;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px , rgb(0,0,0,0.3) 0px 30px 60px -30px;
 }
-.dishes div{
-  /* margin: 10px; */
-  width: 400px;
-  height: 180px;
-  /* background-color: red; */
-  border-radius: 10px;
-  box-shadow: 3px 3px 15px black;
+.logo{
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  /* align-items: center; */
+  margin-top: 30px;
 }
-.maggi{
+.logo h2{
+  color: blue;
+  text-transform: capitalize;
+}
+.menu-link{
+  grid-column: 3/4;
+}
+.menu-link ul{
+  height: 10rem;
   display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  margin-top: 30px;
 }
-.maggi img{
-  width: 150px;
-  height: 180px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.menu-link ul li{
+  list-style-type: none;
 }
-.maggi img:hover{
-  transform: scale(1.15);
+.menu-link ul li a{
+  text-transform: capitalize;
+  text-decoration: none;
 }
-.content h3{
-  margin: 5px 10px;
-}
-.content h4{
-  margin: 10px 10px;
-  color: cornflowerblue;
-}
-.content button{
+.social-media{
   margin-left: 50px;
-  background-color: rgb(10, 134, 134);
-  color: white;
-  border: none;
-  outline: none;
-  width: 80px;
-  height: 30px;
-  cursor: pointer;
+  grid-column: 4/5;
+  list-style-type: none;
 }
-.content p{
-  margin: 10px 10px;
-  font-size: 0.8rem;
+.social-media ul{
+  height: 10rem;
+  display: flex;
+  /* align-items: center; */
+  
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.social-media ul li{
+  text-align: right;
+}
+.social-media .facebook{
+  color: blue;
+}
+.social-media .instagram{
+  color: purple;
+}
+.social-media .youtube{
+  color: red;
+}
+.hero-section{
+  margin: 100px auto;
+  text-align: center;
+  font-size: 2rem;
 }
